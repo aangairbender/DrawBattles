@@ -18,7 +18,6 @@ namespace DrawBattles
         public MainForm()
         {
             InitializeComponent();
-            Point p;
         }
 
         private void MainForm_Load(object sender, EventArgs e)

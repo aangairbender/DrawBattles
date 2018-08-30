@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DrawBattles.Game.UI;
+using System;
 using System.Windows.Forms;
 
 namespace DrawBattles
@@ -13,7 +14,7 @@ namespace DrawBattles
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new MenuForm());
         }
     }
 }
