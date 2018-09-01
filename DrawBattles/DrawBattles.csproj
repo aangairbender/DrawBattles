@@ -35,6 +35,12 @@
     <Reference Include="clipper_library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Clipper.6.4.0\lib\net40\clipper_library.dll</HintPath>
     </Reference>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lidgren.Network.1.0.2\lib\net451\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +72,10 @@
     <Compile Include="Game\UI\MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Network\AsyncClient.cs" />
+    <Compile Include="Network\AsyncServer.cs" />
+    <Compile Include="Network\Request.cs" />
+    <Compile Include="Network\Response.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game\UI\MainForm.resx">
@@ -99,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Game\Core\Server\" />
-    <Folder Include="Network\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
